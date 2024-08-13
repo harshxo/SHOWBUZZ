@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 
 @RequestMapping("/api/v1/movies")
-@CrossOrigin(origins = {"http://localhost:3000" ,"https://showbuzz-bay.vercel.app"})
+@CrossOrigin(origins = {"http://localhost:3000" , "https://showbuzz-bay.vercel.app"})
 public class MovieController {
 	@Autowired
 	private MovieService movieService;
