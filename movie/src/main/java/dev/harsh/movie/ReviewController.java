@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/v1/reviews")
 @CrossOrigin( {
     "http://localhost:3000",
-    "https://showbuzz-al4kz4ku9-harshs-projects-ebeda428.vercel.app"
+    "https://showbuzz-ee9pcluy9-harshs-projects-ebeda428.vercel.app"
 })
 public class ReviewController {
 @Autowired
