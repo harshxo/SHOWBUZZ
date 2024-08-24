@@ -21,6 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
     "http://localhost:3000",
     "https://showbuzz-al4kz4ku9-harshs-projects-ebeda428.vercel.app"
 } )
+
 public class MovieController {
 	@Autowired
 	private MovieService movieService;
@@ -32,6 +33,10 @@ public class MovieController {
   @GetMapping("/{imdbId}")
   public ResponseEntity<Optional<Movie>> getSingleMovie(@PathVariable String imdbId){
       return new ResponseEntity<Optional<Movie>>(movieService.singleMovie(imdbId), HttpStatus.OK);
+  }
+  @GetMapping("/test")
+  public ResponseEntity<String> test() {
+      return new ResponseEntity<>("Movie API is working!", HttpStatus.OK);
   }
   
 public MovieService getMovieService() {
