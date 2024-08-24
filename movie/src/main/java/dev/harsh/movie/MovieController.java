@@ -35,10 +35,9 @@ public class MovieController {
       return new ResponseEntity<Optional<Movie>>(movieService.singleMovie(imdbId), HttpStatus.OK);
   }
   @GetMapping("/test")
-  public ResponseEntity<String> test() {
-      return new ResponseEntity<>("Movie API is working!", HttpStatus.OK);
+  public String test() {
+      return "Movie API is working!";
   }
-  
 public MovieService getMovieService() {
 	return movieService;
 }
